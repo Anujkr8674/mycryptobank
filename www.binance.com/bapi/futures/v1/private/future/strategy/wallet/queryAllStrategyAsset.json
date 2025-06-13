@@ -1,0 +1,1 @@
+{"code":"000000","message":null,"messageDetail":null,"data":{"activate":false,"supportedStrategyTypes":["REBALANCE_BOT","SPOT_GRID","FUTURE_GRID","DELIVERY_GRID","SPOT_DCA"],"assets":[],"spotAssetBtcValuation":"0.0","umAssetBtcValuation":"0.0","cmAssetBtcValuation":"0.0","arbitrageAssetBtcValuation":"0.0"},"success":true}

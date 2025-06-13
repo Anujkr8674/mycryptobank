@@ -1,0 +1,89 @@
+.tradeMarketColumnWrap {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    height: 100%
+}
+
+.tradeMarketColumnWrap .content {
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: var(--color-TertiaryText);
+    cursor: pointer;
+    display: flex;
+    flex: 1 1;
+    font-size: 12px;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none
+}
+
+.tradeMarketColumnWrap .content:hover {
+    background-color: var(--color-bg3)
+}
+
+.tradeMarketColumnWrap .bn-tooltips-ele {
+    height: 100%
+}
+
+.tradeMarketColumnWrap .content .item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tradeMarketColumnWrap .content .item-symbol-text {
+    align-items: center;
+    color: var(--color-TertiaryText);
+    display: flex;
+    flex: 1 1;
+    font-weight: 400
+}
+
+.tradeMarketColumnWrap .content .item-color-buy {
+    color: var(--color-Buy);
+    font-size: 12px
+}
+
+.tradeMarketColumnWrap .content .item-color-sell {
+    color: var(--color-Sell);
+    font-size: 12px
+}
+
+.tradeMarketColumnWrap .content .item-color-noramal {
+    color: var(--color-SecondaryBg);
+    text-align: end
+}
+
+.trdSubTab .tabBoxWrap {
+    display: block;
+    height: 24px;
+    width: 100%
+}
+
+.trdSubTab .tabBoxWrap .tab-icon {
+    position: relative;
+    top: 2px
+}
+
+.trdSubTab .tabBoxWrap .tabBtn {
+    border-radius: 6px;
+    color: var(--color-TertiaryText);
+    display: inline-block;
+    font-weight: 400;
+    height: 24px;
+    line-height: 20px;
+    padding: 2px 8px;
+    vertical-align: baseline
+}
+
+.trdSubTab .tabBoxWrap .activeBtn {
+    background-color: var(--color-bg3);
+    border-radius: 6px;
+    color: var(--color-PrimaryText);
+    font-weight: 500
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40" height="40" width="40">
+<rect fill="#0E0E0E" rx="20" height="40" width="40"></rect>
+<path stroke-width="1.60326" stroke="#03D498" d="M13.7056 16.9484L20.2236 20.7217V28.2682L13.7056 32.0415L7.1875 28.2682V20.7217L13.7056 16.9484Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+<path stroke-width="1.60326" stroke="#03D498" d="M26.7407 16.9484L33.2588 20.7217V28.2682L26.7407 32.0415L20.2227 28.2682V20.7217L26.7407 16.9484Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+<path stroke-width="1.60326" stroke="#03D498" d="M20.2222 28.1634V20.6168"></path>
+<path stroke-width="1.60326" stroke="#03D498" d="M20.228 5.625L26.7461 9.39829V16.9449L20.228 20.7182L13.71 16.9449V9.39829L20.228 5.625Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+<path stroke-width="1.60326" stroke="#03D498" d="M26.748 16.9484L20.23 20.7217L13.7119 16.9484"></path>
+<path stroke-linecap="round" stroke-width="1.60326" stroke="white" d="M20.228 13.182L26.7461 16.9553V24.5019L20.228 28.2752L13.71 24.5019V16.9553L20.228 13.182Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+<path fill="#03D498" d="M20.2417 22.3289C21.2772 22.3289 22.1167 21.4894 22.1167 20.4539C22.1167 19.4183 21.2772 18.5789 20.2417 18.5789C19.2062 18.5789 18.3667 19.4183 18.3667 20.4539C18.3667 21.4894 19.2062 22.3289 20.2417 22.3289Z"></path>
+</svg>

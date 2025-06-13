@@ -1,0 +1,174 @@
+.trd-otopanel .panel-title {
+    color: var(--color-PrimaryText);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px
+}
+
+.trd-otopanel .panel-item {
+    color: var(--color-PrimaryText);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: auto;
+    width: 322px
+}
+
+.trd-otopanel .panel-container {
+    padding: 24px 0
+}
+
+.trd-otopanel .panel-content {
+    border: 1px solid var(--color-Line);
+    border-radius: 12px;
+    margin-top: 8px;
+    min-height: 164px;
+    overflow: hidden;
+    padding: 16px
+}
+
+.trd-otopanel .order-sub .panel-content {
+    min-height: 192px
+}
+
+.trd-otopanel .content-title {
+    font-size: 16px;
+    font-weight: 600;
+    height: 24px;
+    line-height: 24px
+}
+
+.trd-otopanel .order-sub {
+    align-items: flex-start;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin: auto
+}
+
+.trd-otopanel .order-sub .panel-item {
+    margin: 0
+}
+
+.trd-otopanel .panel-orderline {
+    text-align: center
+}
+
+.trd-otopanel .panel-orderline .line1 {
+    border-left: 1px dashed var(--color-Line);
+    height: 24px;
+    margin: auto;
+    width: 1px
+}
+
+.trd-otopanel .panel-orderline .line-sub {
+    display: flex;
+    margin: auto;
+    width: 240px
+}
+
+.trd-otopanel .panel-orderline .line2 {
+    border-left: 1px dashed var(--color-Line);
+    border-top: 1px dashed var(--color-Line);
+    border-top-left-radius: 4px;
+    flex: 1 1;
+    height: 24px;
+    position: relative
+}
+
+.trd-otopanel .panel-orderline .line3 {
+    border-right: 1px dashed var(--color-Line);
+    border-top: 1px dashed var(--color-Line);
+    border-top-right-radius: 4px;
+    flex: 1 1;
+    height: 24px;
+    position: relative
+}
+
+.trd-otopanel .content-desc {
+    color: var(--color-TertiaryText);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 8px;
+    text-align: left
+}
+
+.trd-otopanel .content-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
+.trd-otopanel .content-item {
+    align-items: center;
+    display: flex;
+    height: 22px;
+    justify-content: space-between
+}
+
+.trd-otopanel .content-item>div:first-of-type {
+    color: var(--color-TertiaryText)
+}
+
+@media screen and (max-width:767px) {
+    .trd-otopanel .panel-orderline {
+        display: none
+    }
+    .trd-otopanel .panel-item {
+        width: 100%
+    }
+    .trd-otopanel .order-sub {
+        align-items: flex-end;
+        flex-direction: column
+    }
+    .trd-otopanel .order-sub .panel-item {
+        margin-top: 16px;
+        position: relative;
+        width: 275px
+    }
+    .trd-otopanel .order-sub .panel-item:first-of-type:before {
+        border-bottom: 1px solid var(--color-Line);
+        border-bottom-left-radius: 4px;
+        border-left: 1px solid var(--color-Line);
+        content: "";
+        height: 60px;
+        left: -25px;
+        position: absolute;
+        top: -16px;
+        width: 20px
+    }
+    .trd-otopanel .order-sub .panel-item:first-of-type:after {
+        border-bottom: 4px solid transparent;
+        border-left: 6px solid var(--color-Line);
+        border-top: 4px solid transparent;
+        content: "";
+        left: -6px;
+        position: absolute;
+        top: 41px
+    }
+    .trd-otopanel .order-sub .panel-item:nth-of-type(2):before {
+        border-bottom: 1px solid var(--color-Line);
+        border-bottom-left-radius: 4px;
+        border-left: 1px solid var(--color-Line);
+        content: "";
+        height: 270px;
+        left: -25px;
+        position: absolute;
+        top: -225px;
+        width: 20px
+    }
+    .trd-otopanel .order-sub .panel-item:nth-of-type(2):after {
+        border-bottom: 4px solid transparent;
+        border-left: 6px solid var(--color-Line);
+        border-top: 4px solid transparent;
+        content: "";
+        left: -6px;
+        position: absolute;
+        top: 41px
+    }
+}
+
+.openOrderWeb {
+    padding: 0 16px
+}

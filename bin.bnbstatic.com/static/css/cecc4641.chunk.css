@@ -1,0 +1,25 @@
+.UniversalLinkFallbackNotice__Popup .UniversalLinkFallbackNotice_Actions {
+    grid-gap: var(--space-s);
+    gap: var(--space-s)
+}
+
+.UniversalLinkFallbackNotice__Popup .UniversalLinkFallbackNotice_Actions>* {
+    flex: 1 1
+}
+
+@media screen and (max-width:345px) {
+    #__APP {
+        zoom: .7
+    }
+}
+
+::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    display: none;
+    scrollbar-width: none;
+    width: 0 !important
+}
+
+body {
+    --scroll-size: 0 !important
+}

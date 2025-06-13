@@ -1,0 +1,520 @@
+.SharePoster__Action-Container--bmp .bn-button {
+    height: 48px;
+    min-height: unset;
+    min-width: unset;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48px
+}
+
+.SharePoster__Action-Container--bmp .bn-button .bn-svg {
+    font-size: 24px;
+    height: 24px;
+    width: 24px
+}
+
+.SharePoster__Action-Button.bn-button {
+    color: var(--color-textPrimary);
+    height: 48px;
+    min-width: 48px;
+    padding: unset;
+    width: 48px
+}
+
+@media (max-width:767px) {
+    .SharePoster__Action-Button.bn-button {
+        height: 44px;
+        min-width: 44px;
+        width: 44px
+    }
+}
+
+.SharePoster__Action-Button__Icon.bn-svg {
+    color: var(--color-textPrimary);
+    font-size: 24px;
+    height: 24px;
+    width: 24px
+}
+
+.SharePoster__Action-Button--secondary {
+    background: transparent;
+    border: 1px solid var(--color-line)
+}
+
+.SharePoster__Action-Button--secondary:active {
+    background: var(--color-bg) !important
+}
+
+@media (min-width:768px) {
+    .SharePoster__Action-Button--secondary:hover {
+        background: var(--color-bg) !important
+    }
+}
+
+.SharePoster__Action-Button--primary {
+    background: var(--color-primary)
+}
+
+.SharePoster__Action-Button--primary:active {
+    background: var(--color-primaryHover) !important
+}
+
+@media (min-width:768px) {
+    .SharePoster__Action-Button--primary:hover {
+        background: var(--color-primaryHover) !important
+    }
+}
+
+.SharePoster__Actions {
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    overflow-x: scroll;
+    width: 100%
+}
+
+@media (max-width:767px) {
+    .SharePoster__Actions {
+        grid-gap: 12px;
+        gap: 12px
+    }
+    .SharePoster__Actions::-webkit-scrollbar,
+    .SharePoster__Actions::-webkit-scrollbar-track {
+        display: none !important
+    }
+    .SharePoster__Actions::-webkit-scrollbar-thumb {
+        display: none !important
+    }
+}
+
+.SharePoster__FooterContainer--desktop {
+    padding: 32px
+}
+
+@media only screen and (max-height:767px) {
+    .SharePoster__FooterContainer--desktop {
+        overflow-y: auto;
+        padding-top: 8px
+    }
+}
+
+.SharePoster__FooterContainer--desktop__title {
+    color: var(--color-textPrimary);
+    margin-bottom: 32px
+}
+
+.SharePoster__FooterDescription {
+    color: var(--color-textPrimary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px
+}
+
+@media (max-width:767px) {
+    .SharePoster__FooterDescription {
+        color: var(--color-textSecondary);
+        font-size: 14px;
+        line-height: 22px
+    }
+}
+
+.SharePoster__LoginSection {
+    grid-gap: 8px;
+    align-items: center;
+    border: 1px solid var(--color-line);
+    border-radius: 32px;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 12px 14px
+}
+
+.SharePoster__LoginSection__desc {
+    color: var(--color-textPrimary)
+}
+
+.SharePoster__ShareLinkContainer {
+    grid-gap: 16px;
+    align-items: center;
+    background: var(--color-bg1);
+    border: 1px solid var(--color-line);
+    border-radius: 32px;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 12px
+}
+
+.CopyThis-icon {
+    font-size: 16px
+}
+
+.ReferralLink-label {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--color-ReferralLinkLabel);
+    display: -webkit-box;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: break-spaces
+}
+
+.PosterImage--9-16 {
+    aspect-ratio: 9/16;
+    height: 100%;
+    width: auto
+}
+
+.PosterImage--16-9 {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 100%
+}
+
+.PosterImage--1-1 {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: auto
+}
+
+.Slider {
+    height: 100%
+}
+
+.Slider .bn-swiper-item,
+.Slider .swiper-slide {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform .3s ease-in-out
+}
+
+.Slider .swiper-slide {
+    opacity: .7;
+    transform: scale(.9)
+}
+
+.Slider .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1
+}
+
+.Slider .slick-list,
+.Slider .slick-track {
+    height: 100%
+}
+
+.Slider .slick-slide {
+    opacity: .7;
+    transform: scale(.9);
+    transition: transform .3s ease-in-out
+}
+
+.Slider .slick-slide>div {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center
+}
+
+.Slider .slick-slide.slick-center {
+    opacity: 1 !important;
+    transform: scale(1) !important
+}
+
+.SharePoster-PosterContainer--mobile {
+    align-items: center;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 24px;
+    padding-top: 24px
+}
+
+@media only screen and (max-height:767px) {
+    .SharePoster-PosterContainer--mobile {
+        zoom: .75
+    }
+}
+
+@media only screen and (max-height:650px) {
+    .SharePoster-PosterContainer--mobile {
+        zoom: .6
+    }
+}
+
+.SharePoster-PosterContainer--desktop {
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+    width: 100%
+}
+
+@media only screen and (max-height:767px) {
+    .SharePoster-PosterContainer--desktop {
+        zoom: .75
+    }
+}
+
+.SharePoster__IncentiveTagContainer {
+    bottom: 8px;
+    left: 8px;
+    position: absolute;
+    z-index: 1
+}
+
+.SharePoster__QrCodeContainer {
+    background-color: #fff;
+    bottom: 8px;
+    position: absolute;
+    right: 8px;
+    z-index: 1
+}
+
+.SharePoster__QrImage--x2 {
+    zoom: .5
+}
+
+.SharePoster-Dialog.bn-mask .bn-modal-wrap {
+    align-items: center;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    max-width: unset;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: unset
+}
+
+.SharePoster-Dialog-content.bn-modal-content {
+    background: var(--color-bg1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-height: 100%;
+    max-width: 520px;
+    overflow: visible;
+    padding: 0;
+    position: relative
+}
+
+.SharePoster-MobileDialog {
+    z-index: 1000
+}
+
+.SharePoster-MobileDialog .bn-modal-wrap {
+    background: rgba(0, 0, 0, .6);
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    max-width: unset;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: unset
+}
+
+.SharePoster-MobileDialog.bn-drawer>.bn-drawer-wrap {
+    background: transparent;
+    height: 100%;
+    max-height: unset !important
+}
+
+.SharePoster-MobileDialog .bn-modal-content {
+    padding: 0
+}
+
+.SharePoster-MobileDialog-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 520px;
+    overflow-y: hidden;
+    padding: 0 !important
+}
+
+@media (max-width:767px) {
+    .SharePoster-MobileDialog-content {
+        max-width: 100%;
+        width: 100%
+    }
+}
+
+.SharePoster-MobileDialog--bmp .bn-modal-content {
+    max-height: 100%;
+    overflow: hidden
+}
+
+.uikit-carousel {
+    height: 100%;
+    max-width: 100%;
+    width: 100%
+}
+
+.theme-root.light {
+    --color-LearnMoreLink: #c99400;
+    --color-ReferralLinkLabel: #202630
+}
+
+@media (max-width:767px) {
+    .theme-root.light {
+        --color-ReferralLinkLabel: #848e9c
+    }
+}
+
+.theme-root.dark {
+    --color-LearnMoreLink: #f0b90b;
+    --color-ReferralLinkLabel: #848e9c
+}
+
+.qr-modal .bn-modal-header-next {
+    color: #fff
+}
+
+.qr-modal .bn-modal-wrap {
+    background: linear-gradient(180deg, #0c0e13, #3d444f);
+    border-radius: 0;
+    padding: 32px 20px;
+    width: auto
+}
+
+.qr-modal .ellipse-voucher {
+    background-color: #30353f;
+    border-radius: 9999px;
+    height: 24px;
+    position: absolute;
+    top: 240px;
+    width: 24px
+}
+
+.qr-modal .ellipse-voucher--left {
+    left: -12px
+}
+
+.qr-modal .ellipse-voucher--right {
+    right: -12px
+}
+
+.share-more--bmp .bn-drawer-wrap {
+    background-color: transparent !important
+}
+
+.share-more .SharePoster-MobileDialog {
+    z-index: 1000 !important
+}
+
+.share-more .SharePoster__FooterContainer--mobile {
+    background-color: var(--color-bg6) !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important
+}
+
+.share-more .PosterImage {
+    -webkit-text-size-adjust: auto;
+    box-shadow: 0 0 .25rem #333b47
+}
+
+.share-more .PosterImage--16-9 {
+    max-width: 336px !important
+}
+
+@media only screen and (max-width:767px) {
+    .share-more .PosterImage--16-9 {
+        max-width: 400px
+    }
+}
+
+.SharePoster__Text--html .h5-span,
+.SharePoster__Text--html span {
+    font-weight: 700
+}
+
+.show-scrollbar::-webkit-scrollbar {
+    display: inline !important;
+    display: initial !important;
+    height: 8px !important;
+    width: 8px !important
+}
+
+.show-scrollbar {
+    -ms-overflow-style: auto !important;
+    scrollbar-width: auto !important
+}
+
+.echart_tooltip {
+    color: var(--color-bg6)
+}
+
+.echart_tooltip,
+.echart_tooltip_date {
+    font-family: BinancePlex;
+    font-size: 12px;
+    letter-spacing: .7px;
+    line-height: 20px
+}
+
+.echart_tooltip_date {
+    color: var(--color-IconNormal)
+}
+
+.SharePoster__Text--smaller {
+    zoom: .75
+}
+
+.SharePoster__QrContainer {
+    background-color: #fff;
+    padding: 4px;
+    position: absolute
+}
+
+.SharePoster__QrCode {
+    zoom: .5
+}
+
+@media screen and (max-width:345px) {
+    #__APP {
+        zoom: .7
+    }
+}
+
+::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    display: none;
+    height: 0 !important;
+    width: 0 !important
+}
+
+body {
+    --scroll-size: 0 !important;
+    overflow-x: hidden !important
+}
+
+* {
+    scrollbar-width: none !important
+}
+
+.bn-layer-notifies,
+.bn-layer-notifies-wrap {
+    z-index: 10000 !important
+}
+
+.bn-trans:not(:first-child) .bn-notification__push {
+    margin-top: 0 !important
+}

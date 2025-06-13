@@ -1,0 +1,164 @@
+.vip-program .bn-web-table thead tr {
+    background-color: transparent !important
+}
+
+.vip-custom-modal .bn-modal-wrap {
+    overflow: visible;
+    width: 1024px
+}
+
+@media only screen and (max-width:1023px) {
+    .vip-custom-modal .bn-modal-wrap {
+        width: 520px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .vip-custom-modal .bn-modal-wrap {
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+        width: 100%
+    }
+    .vip-custom-modal .bn-modal-content {
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        max-height: 100%
+    }
+}
+
+.vip-select .bn-select-field {
+    height: 48px
+}
+
+.vip-select .data-line {
+    border: 1px solid var(--color-InputLine)
+}
+
+.vip-select .active {
+    border-color: var(--color-primaryHover)
+}
+
+.vip-select-options .bn-select-overlay-options {
+    max-height: 380px !important
+}
+
+.vip-input {
+    background: transparent !important
+}
+
+.vip-input input:-webkit-autofill,
+.vip-input input:-webkit-autofill:active,
+.vip-input input:-webkit-autofill:focus,
+.vip-input input:-webkit-autofill:hover {
+    -webkit-text-fill-color: var(--color-textPrimary);
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s
+}
+
+.vip-input input::-moz-placeholder {
+    color: var(--color-textDisabled);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px
+}
+
+.vip-input input:-ms-input-placeholder {
+    color: var(--color-textDisabled);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px
+}
+
+.vip-input input::placeholder {
+    color: var(--color-textDisabled);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px
+}
+
+.banner {
+    background: #d3d3d3 50%/cover no-repeat;
+    height: 360px
+}
+
+@media only screen and (max-width:1023px) {
+    .banner {
+        height: 248px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .banner {
+        height: 178px
+    }
+}
+
+.vip-textarea {
+    background: transparent !important;
+    border: 1px solid var(--color-InputLine) !important;
+    border-radius: 10px !important
+}
+
+.ani-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0 28px;
+    text-align: center
+}
+
+@media only screen and (max-width:1023px) and (min-width:767px) {
+    .ani-text {
+        font-size: 14px;
+        line-height: 16px;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .ani-text {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        width: 220px
+    }
+}
+
+.card {
+    grid-gap: 64px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    min-width: 280px;
+    padding: 60px 0
+}
+
+@media only screen and (max-width:1023px) and (min-width:767px) {
+    .card {
+        grid-gap: 24px;
+        border-radius: 12px;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: flex-start;
+        line-height: 16px;
+        padding: 60px 40px;
+        width: 100%
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .card {
+        grid-gap: 24px;
+        border-radius: 12px;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 0
+    }
+}

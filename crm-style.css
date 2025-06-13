@@ -1,0 +1,420 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e11;
+  overflow-x: hidden; /* Right side scrolling hata diya */
+}
+
+.sidebar {
+  width: 250px;
+  background: #0e0e11;
+  color: white;
+  height: -webkit-fill-available;
+  position: fixed;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li:hover {
+  background: #1a1a1d;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  background: #1a1a1d;
+  overflow-y: auto;
+  max-height: 250px;
+  transition: max-height 0.4s ease;
+}
+
+.dropdown-menu.open {
+  display: block;
+  height: auto;
+  overflow-y: auto;
+}
+
+.dropdown-menu li {
+  padding-left: 40px;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+width: 6px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+background-color: #555;
+border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1202;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.18);
+    width: 100%;
+  }
+  #sidebar{
+    margin-top: 100px;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: inline;
+  }
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 1000;
+  background: #18181b;
+  color: #f0b90b;
+  font-size: 40px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1200;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #f0b90b;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-top: 0;
+  }
+  .close-btn {
+    display: block;
+  }
+  .overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  .overlay {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar.active ~ .overlay {
+    pointer-events: auto;
+  }
+}
+
+.menu li.active, .menu li.active > a {
+  background: none !important;
+  color: wheat !important;
+}
+.menu li.active a {
+  color: wheat !important;
+}
+.menu li.active .icon {
+  color: wheat !important;
+}
+.menu li:hover:not(.active) {
+  background: #1a1a1d;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  min-height: 100vh;
+  background: #0e0e11;
+  color: white;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: #1a1a1d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #f0b90b;
+}
+
+.stat-card p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+.nested-dropdown > a {
+  position: relative;
+}
+.nested-menu {
+  display: none;
+  position: relative;
+  left: 0;
+  background: #23232a;
+  margin-top: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.nested-menu.open {
+  display: block;
+}
+.nested-dropdown .arrow {
+  float: right;
+  margin-left: 8px;
+}
+
+
+<!-- Add Litepicker CSS/JS in <head> if not already present -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+
+
+/* Litepicker custom dark+yellow theme */
+.litepicker {
+background: #181A20 !important;
+color: #fff !important;
+border-radius: 18px !important;
+border: 1.5px solid #23262F !important;
+box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.litepicker .container__months {
+background: #181A20 !important;
+border-radius: 18px !important;
+}
+.litepicker .container__days {
+background: #181A20 !important;
+}
+.litepicker .month-item-header {
+background: #181A20 !important;
+color: #fff !important;
+font-size: 1.2rem;
+font-weight: 600;
+border-bottom: none !important;
+padding-bottom: 8px;
+}
+.litepicker .day-item {
+background: transparent !important;
+color: #fff !important;
+border-radius: 8px !important;
+font-size: 1.08rem;
+transition: background 0.15s, color 0.15s;
+}
+.litepicker .day-item.is-today {
+border: 1.5px solid #f0b90b !important;
+}
+.litepicker .day-item.is-start-date,
+.litepicker .day-item.is-end-date {
+background: #f0b90b !important;
+color: #181A20 !important;
+border-radius: 8px !important;
+font-weight: 700;
+box-shadow: 0 0 0 2px #f0b90b;
+}
+.litepicker .day-item.is-in-range:not(.is-start-date):not(.is-end-date) {
+background: #35362f !important;
+color: #fff !important;
+border-radius: 8px !important;
+}
+.litepicker .day-item.is-disabled {
+color: #444 !important;
+background: transparent !important;
+cursor: not-allowed !important;
+}
+.litepicker .button-next-month, .litepicker .button-previous-month {
+color: #fff !important;
+background: none !important;
+border: none !important;
+font-size: 1.3rem;
+border-radius: 6px;
+transition: background 0.15s;
+}
+.litepicker .button-next-month:hover, .litepicker .button-previous-month:hover {
+background: #23262F !important;
+}
+.litepicker .container__months .month-item {
+background: #181A20 !important;
+}
+.litepicker .container__days .day-item:hover:not(.is-disabled):not(.is-start-date):not(.is-end-date) {
+background: #23262F !important;
+color: #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-start-date,
+.litepicker .container__days .day-item.is-in-range.is-end-date {
+background: #f0b90b !important;
+color: #181A20 !important;
+}
+.litepicker .container__days .day-item.is-in-range {
+box-shadow: none !important;
+}
+.litepicker .container__days .day-item.is-start-date,
+.litepicker .container__days .day-item.is-end-date {
+border-radius: 8px !important;
+}
+.litepicker .container__days .day-item.is-in-range {
+border-radius: 8px !important;
+}
+.litepicker .container__days .day-item.is-in-range:not(.is-start-date):not(.is-end-date) {
+background: #35362f !important;
+color: #fff !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today {
+border: 1.5px solid #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-today:not(.is-start-date):not(.is-end-date) {
+border: 1.5px solid #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-disabled {
+color: #444 !important;
+background: transparent !important;
+cursor: not-allowed !important;
+}
+.litepicker .container__days .day-item {
+min-width: 36px !important;
+min-height: 36px !important;
+line-height: 36px !important;
+margin: 2px 0 !important;
+}
+.litepicker .container__days .day-item.is-in-range {
+font-weight: 600;
+}
+.litepicker .container__days .day-item.is-start-date,
+.litepicker .container__days .day-item.is-end-date {
+font-weight: 700;
+}
+.litepicker .container__days .day-item.is-in-range.is-start-date,
+.litepicker .container__days .day-item.is-in-range.is-end-date {
+font-weight: 700;
+}
+.litepicker .container__days .day-item.is-in-range:not(.is-start-date):not(.is-end-date) {
+font-weight: 600;
+}
+.litepicker .container__days .day-item.is-in-range.is-today {
+font-weight: 700;
+}
+.litepicker .container__days .day-item.is-today {
+font-weight: 700;
+}
+.litepicker .container__days .day-item.is-in-range.is-today {
+color: #181A20 !important;
+background: #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today:not(.is-start-date):not(.is-end-date) {
+color: #fff !important;
+background: #35362f !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-start-date.is-today,
+.litepicker .container__days .day-item.is-in-range.is-end-date.is-today {
+color: #181A20 !important;
+background: #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today {
+border: 1.5px solid #f0b90b !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today:not(.is-start-date):not(.is-end-date) {
+border: none !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled {
+color: #444 !important;
+background: transparent !important;
+border: none !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled.is-start-date,
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled.is-end-date {
+color: #444 !important;
+background: transparent !important;
+border: none !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled:not(.is-start-date):not(.is-end-date) {
+color: #444 !important;
+background: transparent !important;
+border: none !important;
+}
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled.is-start-date,
+.litepicker .container__days .day-item.is-in-range.is-today.is-disabled.is-end-date {
+color: #444 !important;
+background: transparent !important;
+border: none !important;
+}

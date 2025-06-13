@@ -1,0 +1,92 @@
+.AdvTableList .bn-web-table {
+    overflow: auto;
+    width: 100%
+}
+
+@media (min-width:1024px) {
+    .AdvTableList .bn-web-table {
+        overflow: visible
+    }
+}
+
+.AdvTableList .bn-web-table tr:hover td {
+    background-color: var(--color-BasicBg)
+}
+
+.AdvTableList .bn-web-table td {
+    vertical-align: top
+}
+
+.AdvTableList .bn-web-table td:first-of-type,
+.AdvTableList .bn-web-table td:last-child,
+.AdvTableList .bn-web-table th:first-of-type,
+.AdvTableList .bn-web-table th:last-child {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.AdvTableList .bn-web-table .AdvTableList__pin-to-top {
+    border-color: transparent;
+    border-radius: var(--radii-2l);
+    outline-color: var(--color-PrimaryYellow);
+    outline-style: solid;
+    outline-width: 1px;
+    position: relative;
+    transform: translateY(-1px)
+}
+
+.AdvTableList .bn-web-table .AdvTableList__pin-to-top td {
+    padding-bottom: var(--space-m);
+    padding-top: var(--space-3xl)
+}
+
+.AdvTableList .bn-web-table .AdvTableList__pin-to-top td:first-child {
+    border-radius: var(--radii-2l);
+    padding-left: var(--space-s)
+}
+
+.AdvTableList .bn-web-table .AdvTableList__pin-to-top td:last-child {
+    border-radius: var(--radii-2l);
+    padding-right: var(--space-s);
+    position: static
+}
+
+.AdvTableList .bn-web-table .AdvTableList__pin-to-top td:last-child:before {
+    --tw-content: attr(data-pin-content);
+    background-color: var(--color-BadgeBg);
+    border-bottom-right-radius: var(--radii-2l);
+    color: var(--color-TextLink);
+    content: var(--tw-content);
+    left: 0;
+    line-height: 1rem;
+    padding: var(--space-4xs) var(--space-2xs);
+    position: absolute;
+    top: 0
+}
+
+.C2CCarouselBanner .slick-list {
+    margin-left: calc(var(--space-2xs)*-1) !important;
+    margin-right: calc(var(--space-2xs)*-1) !important
+}
+
+.C2CCarouselBanner .slick-track {
+    grid-column-gap: var(--space-m) !important;
+    -moz-column-gap: var(--space-m) !important;
+    column-gap: var(--space-m) !important;
+    display: flex !important
+}
+
+.C2CCarouselBanner .slick-dots li button {
+    background-color: var(--color-Line) !important;
+    border-radius: 0 !important;
+    height: 3px !important;
+    width: 8px !important
+}
+
+.C2CCarouselBanner .slick-dots li.slick-active {
+    width: 8px !important
+}
+
+.C2CCarouselBanner .slick-dots li.slick-active button {
+    background-color: var(--color-PrimaryText) !important
+}

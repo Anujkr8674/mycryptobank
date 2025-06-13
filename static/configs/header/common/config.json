@@ -1,0 +1,31 @@
+{
+  "downloadBar": {
+    "www": {
+      "/simple-earn/?$": "bnc://app.binance.com/main/main",
+      "/dual-investment/?$": "bnc://app.binance.com/earns/dual",
+      "/swap/pool/?$": "bnc://app.binance.com/main/main",
+      "/loan/?$": "bnc://app.binance.com/main/main",
+      "/link/?$": "bnc://app.binance.com/main/main",
+      "/vip-institutional-services/?$": "bnc://app.binance.com/main/main",
+      "/binance-api/?$": "bnc://app.binance.com/main/main",
+      "/swap/?$": "bnc://app.binance.com/main/main",
+      "/activity/referral/offers/?$": "bnc://app.binance.com/main/main",
+      "/activity/affiliate/?$": "bnc://app.binance.com/main/main",
+      "/ethereum-upgrade/?$": "bnc://app.binance.com/main/main",
+      "/$": "bnc://app.binance.com/main/main",
+      "/download(/.*|/?$)": "bnc://app.binance.com/main/main",
+      "/trade-rule/?$": "bnc://app.binance.com/trade/trade?at=spot",
+      "/bnb/?$": "bnc://app.binance.com/trade/trade?at=spot&symbol=bnbbusd",
+      "/blog(/.*|/?$)": "bnc://app.binance.com/main/main",
+      "/news(/.*|/?$)": "bnc://app.binance.com/main/main",
+      "/markets(/.*|/?$)": "bnc://app.binance.com/markets/markets",
+      "/price(/.*|/?$)": "bnc://app.binance.com/markets/markets",
+      "/support(/.*|/?$)": "bnc://app.binance.com/main/main",
+      "/how-to-buy(/.*|/?$)": "bnc://app.binance.com/main/main",
+      "/buy-sell-crypto(/.*|/?$)": "bnc://app.binance.com/main/main"
+    },
+    "launchpad": {
+      "/$": "bnc://app.binance.com/main/main"
+    }
+  }
+}

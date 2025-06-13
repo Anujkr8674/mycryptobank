@@ -1,0 +1,76 @@
+.rectangle {
+    background-color: var(--color-PrimaryText);
+    height: 4px;
+    transform: rotate(45deg);
+    width: 4px
+}
+
+.merkle-root-hash {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.merkle-root-hash .merkle-root-hash-btns {
+    margin-top: 0
+}
+
+@media (min-width:767px) and (max-width:1023px) {
+    .merkle-root-hash {
+        align-items: flex-start;
+        flex-direction: column
+    }
+    .merkle-root-hash .merkle-root-hash-btns {
+        margin-top: 24px
+    }
+}
+
+@media (max-width:767px) {
+    .merkle-root-hash {
+        align-items: flex-start;
+        flex-direction: column
+    }
+    .merkle-root-hash .merkle-root-hash-btns {
+        margin-top: 24px
+    }
+}
+
+.mica-load-more {
+    align-items: center;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    width: 100%
+}
+
+.mica-load-more>i {
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border: 2px solid #cfcfcf;
+    border-radius: 50%;
+    border-top-color: #f0b90b;
+    display: block;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}

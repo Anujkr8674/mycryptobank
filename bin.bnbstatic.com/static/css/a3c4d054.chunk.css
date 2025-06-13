@@ -1,0 +1,42 @@
+.coinInfoTable .bn-tab__default {
+    padding: 0
+}
+
+.coinInfoTable .bn-tab__default>div {
+    align-items: center;
+    display: flex;
+    height: 100%
+}
+
+.hideYScrollBar::-webkit-scrollbar-thumb:vertical {
+    background-color: transparent
+}
+
+.symbol-info-tabs {
+    height: 100%
+}
+
+@media (min-width:768px) {
+    .symbol-info-tabs {
+        height: calc(100% - 42px)
+    }
+}
+
+.symbol-info-tabs .bn-tab-list {
+    height: 56px;
+    padding: 16px
+}
+
+.symbol-info-tabs.tab-hidden {
+    padding-top: 16px
+}
+
+.symbol-info-tabs.tab-hidden .bn-tab-list {
+    display: none
+}
+
+.symbol-info-tabs .bn-tab-pane-list {
+    height: calc(100% - 16px);
+    overflow-y: auto;
+    padding: 0 16px 16px
+}

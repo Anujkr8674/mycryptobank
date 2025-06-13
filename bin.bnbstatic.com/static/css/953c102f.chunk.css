@@ -1,0 +1,16 @@
+.mainText {
+    margin-top: "var(--space-xl)";
+    max-height: "140px";
+    overflow-y: "auto";
+    width: "320px"
+}
+
+.modalForm {
+    margin: "var(--space-xl)"
+}
+
+@media only screen and (max-width:768px) {
+    .mainText {
+        width: "250px"
+    }
+}

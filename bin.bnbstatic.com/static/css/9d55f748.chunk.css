@@ -1,0 +1,276 @@
+.orderform-tradetype-wrap {
+    display: flex
+}
+
+.orderform-tradetype-wrap .left-wrap {
+    flex: 1 1
+}
+
+.orderform-tradetype-wrap .right-wrap {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    padding-right: 16px
+}
+
+.orderform-tradetype-wrap .bn-tab-list-arrow-right {
+    right: 10px
+}
+
+.orderform-tradetype-wrap .bn-tab-list-arrow-left {
+    left: 10px
+}
+
+.orderform-tradetype-wrap .text.running {
+    overflow: initial;
+    position: relative
+}
+
+.orderform-tradetype-wrap .text.running:after {
+    background-color: "var(--color-Success)";
+    border-radius: 6px;
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    width: 6px
+}
+
+.trade-type-switch.trade-tabbed-card {
+    padding-left: 16px !important;
+    padding-right: 16px !important
+}
+
+.trade-type-switch.trade-tabbed-card .bn-tab-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.trd-orderform-container .orderform-content {
+    color: var(--color-PrimaryText);
+    font-size: 14px;
+    position: relative
+}
+
+.trd-orderform-container .orderform-content.basic,
+.trd-orderform-container .orderform-content.fullscreen {
+    padding: 0 16px 12px
+}
+
+.trd-orderform-container .orderform-content.pro {
+    padding: 10px 16px 12px
+}
+
+@media screen and (max-width:767px) {
+    .trd-orderform-container .orderform-content {
+        background-color: var(--color-BasicBg);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        -webkit-user-select: none;
+        user-select: none
+    }
+    .trd-orderform-container .orderform-content.mobile-show {
+        padding-top: 0;
+        transform: translate3d(0, -100%, 0);
+        transition: transform .3s ease-in-out;
+        z-index: 23
+    }
+    .trd-orderform-container .orderform-tradetype-wrap {
+        margin-bottom: 8px
+    }
+}
+
+.trd-orderform-container .pro-layout {
+    line-height: 16px
+}
+
+.trd-orderform-container .pro-layout .buySellButton {
+    margin-top: 16px
+}
+
+.trd-orderform-container .classic-layout .headingWrap {
+    align-items: center;
+    display: flex;
+    height: 42px;
+    justify-content: space-between
+}
+
+.trd-orderform-container .classic-layout .classic-wrap {
+    display: flex;
+    gap: 16px
+}
+
+.trd-orderform-container .classic-layout .classic-wrap.fullscreen {
+    gap: 16px
+}
+
+.trd-orderform-container .classic-layout .proInnerForm {
+    flex: 1 1;
+    min-width: 0
+}
+
+.order-form-mode-switch {
+    border-top: 1px solid var(--color-Line);
+    padding: 10px 0
+}
+
+.order-form-mode-switch.no-border {
+    border-top: none;
+    padding-top: 0
+}
+
+.order-tab.with-underline {
+    border-bottom: 1px solid var(--color-Line);
+    margin-bottom: 10px
+}
+
+.order-tab.with-underline .order-form-mode-switch {
+    border-top: none
+}
+
+.order-tab.with-underline .trade-common-link.active {
+    height: 100%;
+    position: relative
+}
+
+.order-tab.with-underline .trade-common-link.active:after {
+    background: var(--color-BtnBg);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 16px
+}
+
+.trd-orderform-container .classic-layout .balance {
+    margin-bottom: 8px
+}
+
+.trd-orderform-container .classic-layout .buySellButton {
+    margin-top: 8px
+}
+
+.trd-orderform-container .orderform-autoform .autoform-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.trd-orderform-container .orderform-autoform .autoform-extra-field {
+    margin-top: 8px
+}
+
+.trd-orderform-container .orderform-autoform .autoform-fee {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px
+}
+
+.trd-orderform-container .percent-slider:focus {
+    outline: none
+}
+
+.trd-orderform-container .percent-slider>div {
+    margin: 2px 0;
+    padding-left: 0;
+    padding-right: 0
+}
+
+.trd-orderform-container .bn-slider-container>label.bn-slider-radio-tooltip {
+    background-color: var(--color-PrimaryText);
+    color: var(--color-CardBg);
+    font-size: 14px
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-available-bar {
+    background-color: var(--color-Line);
+    height: 2px
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-stepper {
+    background-color: var(--color-Line);
+    border-width: 1px
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-progress-bar,
+.trd-orderform-container .bn-slider-container .bn-slider-progress-stepper {
+    background-color: var(--color-PrimaryText)
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-radio-button {
+    border-color: var(--color-PriamryText);
+    border-width: 2px
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-progress-stepper {
+    border-color: var(--color-PriamryText)
+}
+
+.trd-orderform-container .bn-slider-container .bn-slider-radio-button:after,
+.trd-orderform-container .bn-slider-container .bn-slider-stepper:hover {
+    border-color: var(--color-Line)
+}
+
+.trd-orderform-container .bn-textField {
+    padding-inline-start: 8px;
+    width: 100%
+}
+
+.orderform-formrow {
+    min-width: 0
+}
+
+.orderform-formrow .bn-tooltips-wrap {
+    width: 100%
+}
+
+.classic-layout .orderform-formrow .bn-tooltips {
+    left: unset !important;
+    right: 26px;
+    transform: translate(0) !important
+}
+
+.pro-layout .orderform-formrow .bn-tooltips {
+    left: 8px !important
+}
+
+.percent-slider .bn-slider {
+    margin: 4px 0
+}
+
+.percent-slider .bn-slider-track {
+    left: 8px;
+    width: calc(100% - 12px)
+}
+
+.bn-textField .bn-textField-prefix {
+    max-width: 55%
+}
+
+.prefix-wide .bn-textField .bn-textField-prefix {
+    max-width: max-content
+}
+
+.trd-orderform-container .bn-formItem-label {
+    color: var(--color-TertiaryText);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px
+}
+
+.trd-orderform-container .bn-textField-suffix {
+    color: var(--color-PrimaryText)
+}
+
+.bn-tooltips.bn-bubble {
+    font-size: 12px;
+    line-height: 18px
+}

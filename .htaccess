@@ -1,0 +1,58 @@
+RewriteEngine On
+
+# Handle CORS
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type"
+
+# Handle preflight OPTIONS requests (important for CORS)
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^ - [L]
+
+# Route to .php if file exists (make sure .php file is available)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# WebSocket proxy (keep as is)
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteRule ^/?(.*) ws://127.0.0.1:8080/$1 [P,L]
+
+# Redirect static.devfdg.net to local assets (keep as is)
+RewriteCond %{HTTP_HOST} ^static\.devfdg\.net$ [NC]
+RewriteRule ^(.*)$ http://localhost/test2/static/$1 [L,R=301]
+
+# Handle API requests (fix for your endpoint)
+RewriteRule ^bapi/apex/v1/friendly/apex/marketing/complianceActionCheck$ api/handler.php?endpoint=complianceActionCheck [QSA,L]
+
+# Serve static files directly (keep as is)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(static|image|unpkg)/.*$ - [L]
+
+# Default route to index (ensure this is the correct fallback route)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ en-IN.php [L]
+
+# Security headers (keep as is)
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Cache Control for static assets (keep as is)
+<FilesMatch "\.(css|js|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000"
+</FilesMatch>
+
+# Enable compression (keep as is)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# Enable mod_headers (keep as is)
+<IfModule mod_headers.c>
+    Header append Vary: Accept-Encoding
+</IfModule>

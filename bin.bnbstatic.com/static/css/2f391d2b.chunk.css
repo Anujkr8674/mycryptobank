@@ -1,0 +1,355 @@
+.trd-of-vip-panel {
+    background-color: var(--color-CardBg);
+    color: var(--color-PrimaryText);
+    font-size: 12px;
+    line-height: 16px;
+    width: 312px
+}
+
+.trd-of-vip-panel .item {
+    cursor: pointer;
+    padding: 16px 12px
+}
+
+.trd-of-vip-panel .item:hover {
+    background-color: var(--color-Input)
+}
+
+.trd-of-vip-panel .vipTitleWrap {
+    align-items: center;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-Line);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 16px;
+    padding: 16px 0
+}
+
+.trd-of-vip-panel .vipTitle {
+    align-items: center;
+    color: var(--color-TextLink);
+    display: flex;
+    flex: 1 1;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: none
+}
+
+.trd-of-vip-panel .vipTitle:hover {
+    color: var(--color-TextLink)
+}
+
+.trd-of-vip-panel .prefix {
+    color: var(--color-PrimaryText);
+    display: flex;
+    margin-right: 4px
+}
+
+.trd-of-vip-panel .rightIcon {
+    flex: 1 1;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: end
+}
+
+.trd-of-vip-panel .feeWrap {
+    margin: 0 16px;
+    padding: 16px 0
+}
+
+.trd-of-vip-panel .nbnFee {
+    align-items: center;
+    color: var(--color-TertiaryText);
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px
+}
+
+.trd-of-vip-panel .burnHref {
+    color: var(--color-TextLink);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 4px;
+    text-decoration: none
+}
+
+.trd-of-vip-panel .burnHref:hover {
+    color: var(--color-BtnBg)
+}
+
+.trd-of-vip-panel .feeDetail {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 22px
+}
+
+.trd-of-vip-panel .taker {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4px
+}
+
+.trd-of-vip-panel .takerLeft {
+    color: var(--color-TertiaryText);
+    line-height: 18px
+}
+
+.trd-of-vip-panel .takerRight {
+    font-size: 14px;
+    line-height: 18px
+}
+
+.trd-of-vip-panel .takerRight .label {
+    color: var(--color-PrimaryText);
+    margin-right: 2px
+}
+
+.trd-of-vip-panel .discountLabel {
+    color: var(--color-TertiaryText);
+    font-size: 12px;
+    padding-right: 4px;
+    text-decoration-line: line-through
+}
+
+.trd-of-vip-panel .burnStatus {
+    margin-top: 4px;
+    padding-bottom: 16px
+}
+
+.trd-of-vip-panel .burnStatus,
+.trd-of-vip-panel .desc {
+    color: var(--color-TertiaryText)
+}
+
+.trd-of-vip-panel .inviteFriends {
+    align-items: center;
+    background: rgba(252, 213, 53, .05);
+    border: 1px solid rgba(252, 213, 53, .3);
+    border-radius: 12px;
+    display: flex;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px 12px
+}
+
+.trd-of-vip-panel .inviteFriends a {
+    color: var(--color-PrimaryText);
+    text-decoration: none
+}
+
+.mainform .bn-textField {
+    width: 100%
+}
+
+.mainform .bn-textField-input {
+    text-align: right
+}
+
+.margin-type-switch .bn-tab {
+    flex-basis: 0;
+    flex-grow: 1
+}
+
+.account-mode-panel>div {
+    height: auto;
+    margin: 0;
+    width: 100%
+}
+
+.account-mode-panel button {
+    width: 100%
+}
+
+.tradew-setting-panel {
+    padding-top: 8px
+}
+
+.tradew-setting-panel .setting-title {
+    align-items: center;
+    border-bottom: 1px solid var(--color-Line);
+    color: var(--color-PrimaryText);
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 8px;
+    line-height: 24px;
+    padding: 0 16px 8px
+}
+
+.tradew-setting-panel .setting-title .icon {
+    color: var(--color-IconNormal);
+    cursor: pointer;
+    height: 20px;
+    width: 20px
+}
+
+.tradew-setting-panel .setting-title .icon:hover {
+    color: var(--color-PrimaryText)
+}
+
+.trade-setting-contianer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 16px 0;
+    position: relative;
+    width: 400px
+}
+
+@media screen and (max-width:767px) {
+    .trade-setting-contianer {
+        padding: 16px 0;
+        width: 84vw
+    }
+}
+
+.trade-setting-contianer .bn-tab-list {
+    padding: 0 16px
+}
+
+.trade-setting-contianer .tab-list-hidden>.bn-tab-list {
+    display: none
+}
+
+.trade-setting-contianer .setting-close {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 20px
+}
+
+.trade-setting-contianer .setting-close:hover {
+    color: var(--color-PrimaryText)
+}
+
+.trade-setting-contianer .trade-setting-content {
+    padding: 8px 16px
+}
+
+.trade-setting-content .setting-item {
+    border-bottom: 1px solid var(--color-Line);
+    padding: 8px 0
+}
+
+.trade-setting-content .setting-item:last-of-type {
+    border-bottom: none
+}
+
+.trade-setting-content .setting-item-title {
+    color: var(--color-TertiaryText);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 8px 0
+}
+
+.trade-setting-content .setting-item-content-i {
+    align-items: center;
+    color: var(--color-PrimaryText);
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 24px;
+    padding: 10px 0
+}
+
+.trade-setting-content .content-hover {
+    cursor: pointer;
+    margin: 0 -16px;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.trade-setting-content .content-hover:hover {
+    background-color: var(--color-Input)
+}
+
+.trade-setting-content .item-left {
+    align-items: center;
+    display: flex;
+    flex: 1 1
+}
+
+.trade-setting-content .item-left-column {
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 22px
+}
+
+.trade-setting-content .content-i-desc {
+    color: var(--color-TertiaryText);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px
+}
+
+.trade-setting-content .item-decoration {
+    border-bottom: .5px dashed var(--color-TertiaryText);
+    cursor: help;
+    min-height: 24px
+}
+
+.trade-setting-content .item-right {
+    align-items: center;
+    color: var(--color-TertiaryText);
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.trade-setting-content .trade-common-icon.go-info:hover {
+    color: var(--color-PrimaryText);
+    cursor: pointer
+}
+
+.hover-help {
+    cursor: help
+}
+
+.trade-setting-content .mode-overlay {
+    background-color: var(--color-CardBg);
+    border: 1px solid var(--color-Line);
+    color: var(--color-PrimaryText);
+    cursor: pointer;
+    padding: 10px 0
+}
+
+.trade-setting-content .mode-overlay>div {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    min-width: 148px;
+    padding: 9px 10px
+}
+
+.trade-setting-content .mode-overlay>div:hover {
+    background-color: var(--color-Input);
+    cursor: pointer
+}
+
+.trade-setting-content .mode-overlay>div.active {
+    color: var(--color-PrimaryText)
+}
+
+.data-show.bn-coachmark-mask {
+    pointer-events: none
+}

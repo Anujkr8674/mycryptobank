@@ -1,0 +1,1 @@
+No Content: webpack:///src/interpolation.js

@@ -1,0 +1,72 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="العربية",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="ara",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=ara"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="বাংলা",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="ben",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=ben"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="български език",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="bul",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=bul"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="中文 (简体)",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="chi",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=chi"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Česky",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="cze",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=cze"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Filipino; Pilipino",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="fil",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=fil"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Suomi",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="fin",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=fin"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Français",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="fre",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=fre"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Ελληνικά",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="gre",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=gre"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="עברית",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="heb",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=heb"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="हिन्दी",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="hin",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=hin"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Magyar",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="hun",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=hun"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Bahasa Indonesia",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="ind",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=ind"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Italiano",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="ita",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=ita"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="日本語",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="jpn",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=jpn"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="latviešu valoda",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="lav",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=lav"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="polski",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="pol",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=pol"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Português",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="por",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=por"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="română",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="rum",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=rum"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Русский",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="rus",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=rus"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Slovenčina",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="slo",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=slo"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Slovenščina",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="slv",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=slv"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Español",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="spa",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=spa"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="svenska",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="swe",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=swe"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="ไทย",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="tha",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=tha"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Türkçe",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="tur",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=tur"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="українська",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="ukr",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=ukr"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="اردو",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="urd",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=urd"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Tiếng Việt",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="vie",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=vie"
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="中文 (繁體)",AUTOSELECT=NO,DEFAULT=NO,FORCED=NO,LANGUAGE="zh-Hant",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog,public.accessibility.describes-music-and-sound",URI="https://fast.wistia.net/embed/captions/nldhiwsms7.m3u8?language=zh-Hant"
+
+#EXT-X-STREAM-INF:AVERAGE_BANDWIDTH=56061,BANDWIDTH=97240,RESOLUTION=1920x1080,NAME="1080p",SUBTITLES="subtitles"
+https://embed-cloudfront.wistia.com/deliveries/4344c893df479fc0112a76cc90f513c08c6a934d.m3u8
+#EXT-X-STREAM-INF:AVERAGE_BANDWIDTH=22143,BANDWIDTH=26338,RESOLUTION=400x224,NAME="224p",SUBTITLES="subtitles"
+https://embed-cloudfront.wistia.com/deliveries/e59cf0fde39b33c501562a2bee319eaa97773b76.m3u8
+#EXT-X-STREAM-INF:AVERAGE_BANDWIDTH=26701,BANDWIDTH=34178,RESOLUTION=640x360,NAME="360p",SUBTITLES="subtitles"
+https://embed-cloudfront.wistia.com/deliveries/f7ce6c965248a236efad21242cfbc24b6d4f532f.m3u8
+#EXT-X-STREAM-INF:AVERAGE_BANDWIDTH=32909,BANDWIDTH=46069,RESOLUTION=960x540,NAME="540p",SUBTITLES="subtitles"
+https://embed-cloudfront.wistia.com/deliveries/9b14e18cf8fd8c08ab69d795360e8455a954dec7.m3u8
+#EXT-X-STREAM-INF:AVERAGE_BANDWIDTH=40184,BANDWIDTH=64727,RESOLUTION=1280x720,NAME="720p",SUBTITLES="subtitles"
+https://embed-cloudfront.wistia.com/deliveries/caf8b1e12bbcc77af3f6025ea5f3de2b42709f98.m3u8

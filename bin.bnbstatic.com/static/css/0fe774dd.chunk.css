@@ -1,0 +1,1257 @@
+.ScratchCardBanner {
+    align-items: center;
+    bottom: 120px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 16px;
+    z-index: 10
+}
+
+.ScratchCardBanner .bn-svg,
+.ScratchCardBanner-logo {
+    height: 90px;
+    width: 90px
+}
+
+.ScratchCardBanner-title {
+    background-color: var(--color-textPrimary);
+    border-radius: 17px;
+    bottom: 10px;
+    color: var(--color-BasicBg);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 4px 18px;
+    position: relative;
+    text-align: center
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+    .ScratchCardBanner {
+        right: 24px
+    }
+}
+
+@media (-lg-viewport) {
+    .ScratchCardBanner {
+        right: 40px
+    }
+}
+
+.TicketCard {
+    border-radius: var(--radii-m);
+    height: 100%;
+    padding: var(--space-xs);
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .TicketCard {
+        max-width: 380px
+    }
+}
+
+.TicketCard--past {
+    background: var(--color-Input);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.TicketCard--ongoing {
+    background: unset;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.TicketCard--rtl .TicketCard-bg:after {
+    left: calc(var(--voucherStub-width) - 1px);
+    right: auto
+}
+
+.TicketCard--rtl .TicketCard-bg-ticket {
+    background: radial-gradient(circle at top left, transparent 12.5px, var(--color-BasicBg) 12.5px) top, radial-gradient(circle at bottom left, transparent 12.5px, var(--color-BasicBg) 12.5px) bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 51%
+}
+
+.TicketCard--rtl .TicketCard-bg-stub--past {
+    background: radial-gradient(circle at top right, transparent 12.5px, var(--color-VoucherStubBg-past) 12.5px) top, radial-gradient(circle at bottom right, transparent 12.5px, var(--color-VoucherStubBg-past) 12.5px) bottom
+}
+
+.TicketCard--rtl .TicketCard-bg-stub--ongoing {
+    background: radial-gradient(circle at top right, transparent 12.5px, var(--color-VoucherStubBg-ongoing) 12.5px) top, radial-gradient(circle at bottom right, transparent 12.5px, var(--color-VoucherStubBg-ongoing) 12.5px) bottom
+}
+
+.TicketCard--rtl .TicketCard-bg-stub {
+    background-repeat: no-repeat;
+    background-size: 100% 51%
+}
+
+.TicketCard--minimized {
+    padding: 7px
+}
+
+.TicketCard--minimized .TicketCard-contentTicket {
+    padding: 10px
+}
+
+.TicketCard--minimized .TicketCard-footerContainer {
+    margin-top: 3px;
+    min-height: 12px
+}
+
+.TicketCard--minimized .TicketCard-contentStub {
+    padding: 16px 10px
+}
+
+.TicketCard--minimized .TicketCard-bg-stub {
+    min-height: 102px
+}
+
+.TicketCard-bg {
+    border-radius: inherit;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.TicketCard-bg-ticket {
+    background: radial-gradient(circle at top right, transparent 12.5px, var(--color-BasicBg) 12.5px) top, radial-gradient(circle at bottom right, transparent 12.5px, var(--color-BasicBg) 12.5px) bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 51%;
+    border-radius: inherit;
+    left: 0;
+    width: calc(100% - var(--voucherStub-width))
+}
+
+.TicketCard-bg-stub {
+    border-radius: inherit;
+    height: 100%;
+    min-height: 147px;
+    right: 0;
+    width: var(--voucherStub-width)
+}
+
+.TicketCard-bg-stub--past {
+    background: radial-gradient(circle at top left, transparent 12.5px, var(--color-VoucherStubBg-past) 12.5px) top, radial-gradient(circle at bottom left, transparent 12.5px, var(--color-VoucherStubBg-past) 12.5px) bottom
+}
+
+.TicketCard-bg-stub--ongoing {
+    background: radial-gradient(circle at top left, transparent 12.5px, var(--color-VoucherStubBg-ongoing) 12.5px) top, radial-gradient(circle at bottom left, transparent 12.5px, var(--color-VoucherStubBg-ongoing) 12.5px) bottom
+}
+
+.TicketCard-bg-stub {
+    background-repeat: no-repeat;
+    background-size: 100% 51%
+}
+
+.TicketCard-bg:after {
+    border: 1px dashed var(--color-line);
+    content: "";
+    height: 72%;
+    position: absolute;
+    right: calc(var(--voucherStub-width) - 1px);
+    top: 14%;
+    transform: rotate(0deg)
+}
+
+.TicketCard-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.TicketCard-contentTicket {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: var(--space-m) var(--space-s)
+}
+
+.TicketCard-divider {
+    border-bottom: 1px solid var(--color-line)
+}
+
+.TicketCard-footerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--space-4xs);
+    min-height: 16px
+}
+
+.TicketCard-contentStub {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 26px 10px;
+    width: var(--voucherStub-width)
+}
+
+.CommonModal .bn-modal-header {
+    padding: var(--space-s) var(--space-m)
+}
+
+.CommonModal .bn-modal-header-main {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.CommonModal .bn-modal-header {
+    display: flex
+}
+
+.CommonModal .bn-modal-content {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    padding: 0 var(--space-m) var(--space-m) var(--space-m)
+}
+
+.CommonModal .bn-modal-footer {
+    padding: var(--space-m) var(--space-m) var(--space-xl) var(--space-m)
+}
+
+.CommonModal .bn-modal-confirm {
+    padding: 0
+}
+
+.CommonModal .bn-modal-confirm-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 24px auto
+}
+
+.CommonModal .bn-modal-confirm-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px
+}
+
+@media (max-width:767px) {
+    .CommonModal--ActionSheet.bn-modal>.bn-modal-wrap {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        bottom: 0;
+        max-width: 100vw;
+        position: absolute;
+        width: 100%
+    }
+}
+
+.CustomModal .bn-modal-content,
+.CustomModal .bn-modal-wrap {
+    overflow: visible !important
+}
+
+.CustomModal .bn-modal-content {
+    padding: 0 var(--space-xl) var(--space-xl)
+}
+
+.CustomModal .bn-modal-header {
+    padding: var(--space-l) var(--space-xl) 0
+}
+
+.CustomModal .bn-modal-footer {
+    padding: 0 var(--space-xl) var(--space-xl) var(--space-xl)
+}
+
+.CustomModal-title {
+    color: var(--color-textPrimary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 16px;
+    text-align: center
+}
+
+.CustomModal-desc {
+    color: var(--color-textSecondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center
+}
+
+.CustomModal-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-m);
+    min-height: 102px;
+    width: 100%
+}
+
+.CustomModal-icon svg {
+    font-size: 96px
+}
+
+.CustomModal-icon .bn-svg {
+    height: 96px;
+    width: 96px
+}
+
+.UseVoucherModal-selectPair-formItem {
+    margin-top: var(--space-xl);
+    width: 100%
+}
+
+.UseVoucherModal-selectPair-label {
+    color: var(--color-textPrimary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.VoucherAction {
+    color: #181a20;
+    margin-top: var(--space-2xs);
+    width: 100%
+}
+
+.VoucherAction--disabled {
+    background: var(--color-textDisabled);
+    cursor: not-allowed
+}
+
+.VoucherAction-tooltips .bn-bubble-content {
+    width: 240px
+}
+
+.VoucherAction-tooltips .bn-tooltips {
+    transform: translateY(8px) !important
+}
+
+.RulesModal-header-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 auto
+}
+
+.RulesModal-header-notification {
+    align-items: center;
+    background-color: var(--color-badgeBg);
+    border-radius: 4px;
+    color: var(--color-textPrimary);
+    display: flex;
+    margin-top: 12px;
+    padding: 8px;
+    width: 100%
+}
+
+.RulesModal-header-notification-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-right: 20px
+}
+
+.RulesModal-content {
+    color: var(--color-RewardsHub-textThird);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.RulesModal .bn-modal-content {
+    height: 368px;
+    max-height: 368px
+}
+
+.VoucherRulesModal-title {
+    color: var(--color-textPrimary)
+}
+
+.VoucherRulesModal-link {
+    color: var(--color-primary);
+    display: inline
+}
+
+.VoucherRulesModal-nftTitle {
+    color: var(--color-RewardsHub-textThird)
+}
+
+.VoucherRulesModal-tags {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.VoucherRulesModal-tag {
+    background: var(--color-Input);
+    border-radius: var(--radii-xl);
+    margin-right: var(--space-4xs);
+    margin-top: var(--space-4xs);
+    padding: var(--space-4xs) var(--space-2xs)
+}
+
+.VoucherRulesModal-tag-text {
+    color: var(--color-RewardsHub-textThird)
+}
+
+.VoucherRulesModal .bn-modal-header {
+    padding: var(--space-s) var(--space-m)
+}
+
+.VoucherRulesModal .bn-modal-content {
+    padding: 0 var(--space-m) var(--space-m) var(--space-m)
+}
+
+.VoucherRulesModal .bn-modal-footer {
+    padding: var(--space-m) var(--space-m) var(--space-xl) var(--space-m)
+}
+
+.VoucherRulesModal-nftCollections {
+    margin-bottom: var(--space-m)
+}
+
+.VoucherRulesModal-rules {
+    color: var(--color-RewardsHub-textThird);
+    margin-bottom: var(--space-2xs)
+}
+
+.SingleVoucher--minimized .SingleVoucher-name {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0
+}
+
+.SingleVoucher--minimized .SingleVoucher-period {
+    font-size: 9px;
+    line-height: 12px
+}
+
+.SingleVoucher--minimized .SingleVoucher-tags {
+    margin-bottom: 9px;
+    margin-top: 6px
+}
+
+.SingleVoucher--minimized .SingleVoucher-tag {
+    align-items: center;
+    display: flex;
+    height: 18px;
+    padding: 2px 6px
+}
+
+.SingleVoucher--minimized .SingleVoucher-tag-text {
+    font-size: 9px;
+    line-height: 12px
+}
+
+.SingleVoucher--minimized .SingleVoucher-voucherSourceContainer {
+    font-size: 8px;
+    line-height: 12px
+}
+
+.SingleVoucher--minimized .SingleVoucher-infoIcon {
+    display: none;
+    font-size: 9px;
+    top: 0
+}
+
+.SingleVoucher--minimized .SingleVoucher-price {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.SingleVoucher--minimized .SingleVoucher-priceUnit {
+    font-size: 11px;
+    line-height: 15px
+}
+
+.SingleVoucher--minimized .SingleVoucher-button {
+    display: none;
+    font-size: 8px;
+    height: 16px;
+    line-height: 12px;
+    margin-top: 4px;
+    min-height: 16px
+}
+
+.SingleVoucher-name {
+    color: var(--color-textPrimary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: var(--space-4xs)
+}
+
+.SingleVoucher-period {
+    color: var(--color-RewardsHub-textThird);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@media (max-width:374px) {
+    .SingleVoucher-period {
+        font-size: 10px
+    }
+}
+
+.SingleVoucher-tags {
+    grid-row-gap: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-m);
+    margin-top: var(--space-s);
+    min-height: var(--space-xl);
+    row-gap: 4px
+}
+
+.SingleVoucher-tag {
+    background: var(--color-Input);
+    border-radius: 20px;
+    margin-right: var(--space-4xs);
+    max-width: 160px;
+    padding: var(--space-4xs) var(--space-2xs)
+}
+
+.SingleVoucher-tag-text {
+    color: var(--color-textSecondary);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.SingleVoucher-voucherSourceContainer {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.SingleVoucher-infoIcon {
+    color: #707a8a;
+    cursor: pointer;
+    margin-left: var(--space-4xs);
+    position: relative;
+    top: var(--space-5xs)
+}
+
+.SingleVoucher-from {
+    color: var(--color-RewardsHub-textThird);
+    display: inline;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16.5px
+}
+
+.SingleVoucher-voucherSource {
+    color: var(--color-textSecondary);
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-left: var(--space-4xs)
+}
+
+.SingleVoucher-feeRebateAmountContainer {
+    line-height: 16.5px;
+    text-align: center
+}
+
+.SingleVoucher-feeRebateAmount {
+    word-wrap: anywhere;
+    color: var(--color-textBuy);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px
+}
+
+.SingleVoucher-left {
+    color: var(--color-RewardsHub-textThird);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    margin-left: var(--space-4xs)
+}
+
+.SingleVoucher-price {
+    color: var(--color-textPrimary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px
+}
+
+.SingleVoucher-priceUnit {
+    color: var(--color-textPrimary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px
+}
+
+.SingleVoucher-detailsLink {
+    color: var(--color-textPrimary);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: var(--space-4xs);
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline
+}
+
+.ScratchCard {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%
+}
+
+.ScratchCard-cover {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    z-index: 1
+}
+
+.ScratchCard-content {
+    display: flex;
+    height: 100%;
+    width: 100%
+}
+
+.ScratchCard--withCover .ScratchCard-content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.ErrorModal div.bn-modal-wrap {
+    width: 295px
+}
+
+.ErrorModal div.bn-modal-confirm-icon {
+    align-items: center;
+    display: flex;
+    font-size: 96px;
+    height: 96px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%
+}
+
+.ErrorModal div.bn-modal-confirm-title {
+    margin: 16px auto
+}
+
+.ErrorModal div.bn-modal-confirm-desc {
+    margin: 0 auto
+}
+
+.ScratchCardRemindMeModal {
+    text-align: center
+}
+
+.ScratchCardRemindMeModal-footer {
+    grid-gap: 8px;
+    display: flex;
+    gap: 8px;
+    width: 100%
+}
+
+.ScratchCardRemindMeModal-title {
+    color: var(--color-textPrimary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 16px
+}
+
+.ScratchCardRemindMeModal-subTitle {
+    color: var(--color-textSecondary);
+    font-size: 16px;
+    line-height: 24px
+}
+
+.ScratchCardRemindMeModal-logo {
+    margin-bottom: 16px
+}
+
+.ScratchCardRemindMeModal-logo .bn-svg,
+.ScratchCardRemindMeModal-logo svg {
+    font-size: 80px;
+    height: 96px;
+    width: 96px
+}
+
+.ScratchCardRulesModal-ruleList {
+    grid-gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.ScratchCardRulesModal-rule {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.ScratchCardModal .bn-modal-wrap {
+    border-radius: 16px !important;
+    overflow: visible !important
+}
+
+.ScratchCardModal-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%
+}
+
+.ScratchCardModal-header {
+    position: relative
+}
+
+.ScratchCardModal-header-closeMark {
+    color: var(--color-iconNormal);
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px
+}
+
+.ScratchCardModal-content.bn-modal-content {
+    margin-top: 16px;
+    padding: 16px 16px 0;
+    width: 100%
+}
+
+.ScratchCardModal-icon .bn-svg,
+.ScratchCardModal-icon svg {
+    font-size: 100px;
+    height: 130px;
+    width: 100%
+}
+
+.ScratchCardModal-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    text-align: center
+}
+
+.ScratchCardModal-subTitle {
+    color: var(--color-RewardsHub-textThird);
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    text-align: center
+}
+
+.ScratchCardModal-logo {
+    background-color: var(--color-popupBg);
+    height: 120px;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%) translateY(-40%);
+    width: 120px
+}
+
+.ScratchCardModal-logo,
+.ScratchCardModal-logo-layerOne {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center
+}
+
+.ScratchCardModal-logo-layerOne {
+    background: var(--color-ScratchCardBanner-logo-layerOne);
+    padding: 2px;
+    width: 100%
+}
+
+.ScratchCardModal-logo svg {
+    font-size: 40px;
+    height: 40px;
+    width: 40px
+}
+
+.ScratchCardModal-logo img {
+    min-height: 1px;
+    min-width: 1px
+}
+
+.ScratchCardModal-logo:before {
+    border-bottom-right-radius: 50%;
+    left: -16px
+}
+
+.ScratchCardModal-logo:after,
+.ScratchCardModal-logo:before {
+    box-shadow: 0 10px var(--color-popupBg);
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    transform: translateY(-110%);
+    width: 20px
+}
+
+.ScratchCardModal-logo:after {
+    border-bottom-left-radius: 50%;
+    right: -16px
+}
+
+.ScratchCardModal-footer {
+    grid-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.ScratchCardModal-footer.bn-modal-footer {
+    margin-top: 16px;
+    padding: 0 16px 24px;
+    width: 100%
+}
+
+.ScratchCardModal-footer .bn-button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px
+}
+
+.ScratchCardModal-card {
+    background-color: var(--color-SecondaryBg);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 16px;
+    min-height: 136px;
+    padding: 10px
+}
+
+.ScratchCardModal-card-wrap {
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    width: 100%
+}
+
+.ScratchCardModal-card-messageBox {
+    grid-gap: 8px;
+    align-items: center;
+    background: var(--color-line);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 0 16px;
+    text-align: center;
+    width: 100%
+}
+
+.ScratchCardModal-card-message {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.ScratchCardModal-card-message.is-primary {
+    font-weight: 500
+}
+
+.ScratchCardModal-card-subMessage {
+    color: var(--color-textSecondary);
+    font-size: 12px;
+    line-height: 16px
+}
+
+.ScratchCardModal-cta {
+    width: 100%
+}
+
+.ScratchCardModal-viewRules {
+    height: 24px;
+    min-height: 24px;
+    width: 100%
+}
+
+.ScratchCardModal-viewRules.bn-button {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.TaskRulesModal-content {
+    grid-gap: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m)
+}
+
+.TaskRulesModal-section {
+    grid-gap: var(--space-2xs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs)
+}
+
+.TaskRulesModal-section-title {
+    color: var(--color-textPrimary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: var(--space-xl)
+}
+
+.TaskRulesModal-section li {
+    list-style: none
+}
+
+.TaskCard {
+    background-color: var(--color-SecondaryBg);
+    border-radius: var(--radii-m);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    position: relative;
+    scroll-margin-top: var(--globalHeaderHeight)
+}
+
+@media (min-width:768px) {
+    .TaskCard {
+        grid-gap: 16px;
+        flex-direction: row;
+        gap: 16px;
+        padding: 24px
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard {
+        grid-gap: 32px;
+        gap: 32px;
+        padding: 32px
+    }
+}
+
+.TaskCard--withLabel {
+    padding-top: 32px
+}
+
+.TaskCard-taskName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px
+}
+
+@media (min-width:768px) {
+    .TaskCard-taskName {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-taskName {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px
+    }
+}
+
+.TaskCard-taskIcon {
+    align-items: center;
+    display: flex;
+    font-size: 24px
+}
+
+@media (min-width:768px) {
+    .TaskCard-taskIcon {
+        align-items: center;
+        background: var(--color-BasicBg);
+        border-radius: 6px;
+        display: inline-flex;
+        height: 48px;
+        justify-content: center;
+        width: 48px
+    }
+    .TaskCard-taskIcon .bn-svg {
+        height: 24px;
+        width: 24px
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-taskIcon {
+        height: 64px;
+        width: 64px
+    }
+    .TaskCard-taskIcon .bn-svg {
+        height: 32px;
+        width: 32px
+    }
+}
+
+.TaskCard-header {
+    grid-gap: var(--space-2xs);
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    gap: var(--space-2xs);
+    margin-bottom: 16px
+}
+
+@media (min-width:768px) {
+    .TaskCard-header {
+        grid-gap: 24px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 0
+    }
+}
+
+.TaskCard-label {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.TaskCard-info {
+    grid-gap: var(--space-2xs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs)
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .TaskCard-info {
+        grid-gap: var(--space-s);
+        gap: var(--space-s);
+        margin: 0
+    }
+    .TaskCard-info .TimeCounter {
+        font-size: 12px
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-info {
+        grid-gap: var(--space-m);
+        gap: var(--space-m);
+        margin: 0
+    }
+    .TaskCard-info .TimeCounter {
+        font-size: 14px
+    }
+}
+
+.TaskCard-info-rewardIcon {
+    margin-right: 4px
+}
+
+.TaskCard-info-rewardIcon .bn-svg {
+    height: 16px;
+    width: 16px
+}
+
+@media (min-width:1024px) {
+    .TaskCard-info-rewardIcon .bn-svg {
+        height: 20px;
+        width: 20px
+    }
+}
+
+.TaskCard-info-field {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 16px
+}
+
+.TaskCard-info-field-label {
+    color: var(--color-RewardsHub-textThird);
+    font-weight: 400
+}
+
+.TaskCard-info-field-value {
+    align-items: center;
+    color: var(--color-textPrimary);
+    display: flex;
+    flex-direction: row
+}
+
+@media (min-width:768px) {
+    .TaskCard-info-field-label {
+        min-width: 295px
+    }
+    .TaskCard-info-field-value {
+        flex: 1 1;
+        font-weight: 500
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-info-field {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px
+    }
+}
+
+.TaskCard-info-Accumulation {
+    grid-gap: 2px;
+    color: var(--color-textPrimary);
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 2px;
+    line-height: 16px
+}
+
+@media (min-width:1024px) {
+    .TaskCard-info-Accumulation {
+        grid-gap: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 4px;
+        line-height: 20px
+    }
+}
+
+.TaskCard-info-Accumulation-progress {
+    display: flex
+}
+
+.TaskCard-info-Accumulation-unit {
+    text-transform: uppercase
+}
+
+.TaskCard-typeIcon {
+    font-size: attr(data-font-size);
+    height: 24px;
+    width: 24px
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .TaskCard-typeIcon {
+        border-radius: 6px;
+        height: 48px;
+        margin-right: 16px;
+        padding: 12px;
+        width: 48px
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-typeIcon {
+        border-radius: 6px;
+        height: 64px;
+        padding: 16px;
+        width: 64px
+    }
+}
+
+.TaskCard-actions {
+    grid-gap: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 16px
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .TaskCard-actions {
+        grid-gap: 16px;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 16px;
+        margin-top: unset
+    }
+}
+
+@media (min-width:1024px) {
+    .TaskCard-actions {
+        grid-gap: 16px;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        gap: 16px;
+        margin-top: unset
+    }
+    .TaskCard-actions-act {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px
+    }
+}
+
+.TaskCard-taskLabel {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.TaskCard--disabled:before {
+    background-color: transparent;
+    z-index: 1
+}
+
+.TaskCard--disabled:after,
+.TaskCard--disabled:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.TaskCard--disabled:after {
+    background-color: var(--color-SecondaryBg);
+    opacity: .4;
+    pointer-events: none;
+    z-index: var(--zindex-mask)
+}
+
+.TaskCard--disabled .TaskRuleTrigger {
+    z-index: calc(var(--zindex-mask) + 1)
+}
+
+.TaskCard--rtl .TaskCard-icon-wrap {
+    left: 20px;
+    right: auto
+}
