@@ -1,3 +1,4 @@
+<?php $currentTab = 'express'; ?>
 <?php include "header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +9,11 @@
 </head>
 <body>
 <?php include "p2pheader.php"; ?>
-<h2 style="text-align: center; margin-top: 20px;">Block Data Express Soon...</h4>
+<h2 style="text-align: center; margin-top: 20px;"> Express Data Soon...</h4>
 
     <?php include "p2pother.php"; ?>
-    <?php include "footer.php"; ?>
+    
     
 </body>
+<?php include "footer.php"; ?>
 </html>

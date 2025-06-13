@@ -1,4 +1,10 @@
-<?php $currentTab = 'p2p'; ?>
+<?php
+session_start();
+include 'config.php'; // Assuming you have database configuration file
+
+// Add this PHP code to set a JavaScript variable based on login status
+$isLoggedIn = isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true;
+?>
 <?php include "header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -1255,9 +1261,92 @@
   
 </head>
 <body style="padding-top: 120px;">
-   <?php include "p2phead.php"; ?>
 
 
+
+<div class="p2p-topbar">
+  <div class="p2p-topbar-left">
+    <div class="toggle-switch-3">
+  <button id="toggleExpress" class="toggle3-btn">Express</button>
+  <button id="toggleP2P" class="toggle3-btn active">P2P</button>
+  <button id="toggleBlock" class="toggle3-btn">Block</button>
+  <div class="toggle3-underline"></div>
+</div>
+  </div>
+  <div id="window" class="p2p-topbar-right">
+    <!-- P2P Help Center Dropdown -->
+    <div class="p2p-menu-item" tabindex="0" id="helpCenterMenu">
+      <i class="fa-solid fa-ticket" ></i>
+      <span style="font-weight:600;">P2P Help Center</span>
+      <i class="fa-solid fa-chevron-down"></i>
+      <div class="p2p-menu-dropdown" id="helpCenterDropdown">
+        <button class="p2p-menu-dropdown-item"><i class="fa-solid fa-arrows-rotate"></i> How to Buy/Sell</button>
+        <button class="p2p-menu-dropdown-item"><i class="fa-regular fa-file-lines"></i> Placing an Order</button>
+        <button class="p2p-menu-dropdown-item"><i class="fa-solid fa-circle-play"></i> Video tutorial</button>
+      </div>
+    </div>
+    <!-- Orders (no dropdown) -->
+    <a href="orders.php" class="p2p-menu-item" tabindex="0">
+      <i class="fa-regular fa-file-lines"></i>
+      <span>Orders</span>
+    </a>
+    <!-- P2P User Center (no dropdown for now) -->
+    <a href="user-center.php" class="p2p-menu-item" tabindex="0">
+      <i class="fa-solid fa-users"></i>
+      <span>P2P User Center</span>
+    </a>
+    <!-- More Dropdown -->
+    <div class="p2p-menu-item" tabindex="0" id="moreMenu">
+      <!-- <i class="fa-solid fa-ellipsis"></i> -->
+      <span>More</span>
+      <i class="fa-solid fa-chevron-down"></i>
+      <div class="p2p-menu-dropdown" id="moreDropdown">
+        <button class="p2p-menu-dropdown-item"><i class="fa-solid fa-credit-card"></i> Payment Methods</button>
+        <button class="p2p-menu-dropdown-item"><i class="fa-solid fa-plus"></i> Post new Ad</button>
+        <button class="p2p-menu-dropdown-item"><i class="fa-solid fa-building"></i> My ads</button>
+        <button class="p2p-menu-dropdown-item"><i class="fa-regular fa-comments"></i> Chat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="mob" class="icon-mobile">
+  <i class="fa-solid fa-ellipsis-vertical"></i>
+  </div> -->
+
+
+  <!-- Mobile Toggle Icon -->
+<div id="mob1-menu-toggle" class="mob1-icon-mobile">
+  <i class="fa-solid fa-ellipsis-vertical"></i>
+</div>
+
+<!-- Mobile Menu -->
+<ul id="mob1-mobileMenu" class="mob1-mobile-menu">
+<li><i class="fas fa-box"></i><span class="mob1-item-text"> Orders</span></li>
+<li><i class="fas fa-comments"></i><span class="mob1-item-text"> Chat</span></li>
+<li><i class="fas fa-user-friends"></i><span class="mob1-item-text"> User Center</span></li>
+<li><i class="fas fa-credit-card"></i><span class="mob1-item-text"> Payment Methods</span></li>
+<li><i class="fas fa-plus"></i><span class="mob1-item-text"> Post new Ad</span></li>
+<li><i class="fas fa-ad"></i><span class="mob1-item-text"> My ads</span></li>
+
+
+  <!-- Dropdown Toggle -->
+  <li id="mob1-help-toggle" class="mob1-dropdown-toggle">
+    <i class="fas fa-circle-question"></i> P2P Help Center
+    <i class="fas fa-chevron-down mob1-arrow-icon"></i>
+  </li>
+
+  <!-- Dropdown Items -->
+  <ul id="mob1-help-submenu" class="mob1-submenu">
+  <li><i class="fas fa-sync-alt"></i><span class="mob1-item-text"> How to Buy/Sell</span></li>
+<li><i class="fas fa-file-alt"></i><span class="mob1-item-text"> Placing an Order</span></li>
+<li><i class="fas fa-play-circle"></i><span class="mob1-item-text"> Video tutorial</span></li>
+
+  </ul>
+</ul>
+
+
+
+</div>
 
 
 
@@ -1402,8 +1491,113 @@
 <div id="express-section" style="display:none; text-align:center; color:#fff; font-size:1.2rem; margin: 40px 0;">Coming Soon...</div>
 <div id="block-section" style="display:none; text-align:center; color:#fff; font-size:1.2rem; margin: 40px 0;">Coming Soon...</div>
 
-<?php include "p2pother.php"; ?>
+<!-- How P2P Works Section -->
+<div class="p2p-works-section">
+  <div class="p2p-works-header">
+    <div class="p2p-works-title">How P2P Works</div>
+    <div class="p2p-works-buttons">
+      <button class="p2p-works-btn active" id="showBuyCrypto">Buy Crypto</button>
+      <button class="p2p-works-btn" id="showSellCrypto">Sell Crypto</button>
+    </div>
+  </div>
+  <!-- Buy Steps -->
+  <div class="p2p-steps" id="p2pBuySteps">
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/document--v1.png" alt="Order"></div>
+      <div class="p2p-step-title">1. Place an Order</div>
+      <div class="p2p-step-desc">Once you place a P2P order, the crypto asset will be escrowed by MyCryptoBank P2P.</div>
+    </div>
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/handshake.png" alt="Pay"></div>
+      <div class="p2p-step-title">2. Pay the Seller</div>
+      <div class="p2p-step-desc">Send money to the seller via the suggested payment methods. Complete the fiat transaction and click "Transferred, notify seller" on MyCryptoBank P2P.</div>
+    </div>
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/receive-cash.png" alt="Receive"></div>
+      <div class="p2p-step-title">3. Receive Crypto</div>
+      <div class="p2p-step-desc">Once the seller confirms receipt of money, the escrowed crypto will be released to you.</div>
+    </div>
+  </div>
+  <!-- Sell Steps -->
+  <div class="p2p-steps" id="p2pSellSteps" style="display:none;">
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/document--v1.png" alt="Order"></div>
+      <div class="p2p-step-title">1. Place an Order</div>
+      <div class="p2p-step-desc">After you place an order, your crypto will be escrowed by MyCryptoBank P2P.</div>
+    </div>
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/conference-call.png" alt="Verify"></div>
+      <div class="p2p-step-title">2. Verify Payment</div>
+      <div class="p2p-step-desc">Check the transaction record in the given payment account, and make sure you receive the money sent by the buyer.</div>
+    </div>
+    <div class="p2p-step-card">
+      <div class="p2p-step-icon"><img src="https://img.icons8.com/ios-filled/50/ffd600/money-transfer.png" alt="Release"></div>
+      <div class="p2p-step-title">3. Release Crypto</div>
+      <div class="p2p-step-desc">Once you confirm the receipt of money, release crypto to the buyer on MyCryptoBank P2P.</div>
+    </div>
+  </div>
+</div>
 
+<div class="top-payments-section">
+  <div class="top-payments-title">Top Payment Methods</div>
+  <div class="top-payments-grid">
+    <div class="top-payment-card" data-color="gray">UPI</div>
+    <div class="top-payment-card" data-color="orange">IMPS</div>
+    <div class="top-payment-card" data-color="yellow">Bank Transfer (India)</div>
+    <div class="top-payment-card" data-color="blue">Digital eRupee</div>
+    <div class="top-payment-card" data-color="blue">Google Pay (GPay)</div>
+    <div class="top-payment-card" data-color="blue">Paytm</div>
+    <div class="top-payment-card" data-color="purple">PhonePe</div>
+    <div class="top-payment-card" data-color="orange">IMPS - PAN</div>
+    <div class="top-payment-card" data-color="gray">UPI-PAN</div>
+  </div>
+</div>
+
+<div class="faq-section">
+  <div class="faq-title">FAQs</div>
+  <div class="faq-list">
+    <div class="faq-card open">
+      <button class="faq-question"><span class="faq-qnum">1</span> What is P2P exchange?<span class="faq-toggle">&#8212;</span></button>
+      <div class="faq-answer">P2P stands for peer-to-peer, and P2P exchanges are platforms that allow users to buy and sell crypto for fiat currency directly with other users. Learn more about <a href="#" class="faq-link">What is P2P Trading</a> and <a href="#" class="faq-link">How Does a Local Bitcoin Exchange Work?</a></div>
+    </div>
+    <div class="faq-card open">
+      <button class="faq-question"><span class="faq-qnum">2</span> How do I sell Bitcoin locally on MyCryptoBank P2P?<span class="faq-toggle">&#8212;</span></button>
+      <div class="faq-answer">First, browse Buy Ads for the crypto you wish to sell, and find the best offers with your preferred payment method. You can read the reviews and check the requirements of the buyer. If they are agreeable to you, start the trade, and do not release the crypto until you have received the money in the payment method you provided. Learn more about <a href="#" class="faq-link">how to sell crypto peer-to-peer</a> or <a href="#" class="faq-link">how to trade bitcoin for cash via MyCryptoBank P2P</a>.</div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">3</span> Which cryptocurrencies are supported in the P2P trade zone?<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer">There are many cryptocurrencies that you can use in the P2P trade zone. You can choose from digital assets like <a href="#" class="faq-link">Bitcoin</a>, <a href="#" class="faq-link">Ethereum</a> and stablecoins.</div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">4</span> Glossary of P2P trading terms<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer"></div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">5</span> How to add new payment methods on MyCryptoBank P2P?<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer"></div>
+    </div>
+    <div class="faq-card open">
+      <button class="faq-question"><span class="faq-qnum">6</span> How do I buy Bitcoin locally on MyCryptoBank P2P?<span class="faq-toggle">&#8212;</span></button>
+      <div class="faq-answer">After you complete identity verification and add your payment methods, you are ready to <a href="#" class="faq-link">buy crypto on MyCryptoBank P2P platform</a>. First, choose from all the available offers in the marketplace. Second, place an order to buy your crypto, and pay the seller based on the preferred payment methods. Lastly, get your crypto from the seller after you complete the fiat transaction and confirm your payment on MyCryptoBank P2P.</div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">7</span> Why is MyCryptoBank P2P better than other P2P marketplaces?<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer">MyCryptoBank P2P is the largest peer-to-peer exchange with more than 800+ payment methods and 100+ fiat currencies. We provide an escrow service that ensures safe and fair trading. Also, on MyCryptoBank P2P you can buy and sell crypto at zero fees. Learn more about <a href="#" class="faq-link">.</a></div>
+    </div>
+    <div class="faq-card open">
+      <button class="faq-question"><span class="faq-qnum">8</span> How do I protect myself against fraud? MyCryptoBank P2P Escrow FTW!<span class="faq-toggle">&#8212;</span></button>
+      <div class="faq-answer">As one of the several safeguards on the platform, MyCryptoBank P2P has a holding mechanism for crypto funds that are involved in any pending transaction. This mechanism prevents incidents of theft or scam by adding another layer of trust, thus preventing malicious actors from stealing your money or crypto without completing their part of the trade.<a href="#" class="faq-link">Learn more.</a></div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">9</span> MyCryptoBank P2P trading FAQ<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer"></div>
+    </div>
+    <div class="faq-card">
+      <button class="faq-question"><span class="faq-qnum">10</span> P2P user transaction policy<span class="faq-toggle">&#43;</span></button>
+      <div class="faq-answer"></div>
+    </div>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
