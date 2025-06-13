@@ -8,7 +8,7 @@
    
 </head>
 <body>
-<?php include "p2pheader.php"; ?>
+<?php include "p2phead.php"; ?>
 <h2 style="text-align: center; margin-top: 20px;">Block Data Coming Soon...</h4>
 
     <?php include "p2pother.php"; ?>

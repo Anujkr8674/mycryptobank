@@ -102,4 +102,16 @@ function updateUnderline() {
 }
 window.addEventListener('resize', updateUnderline);
 window.addEventListener('DOMContentLoaded', updateUnderline);
+
+// Toggle Main Mobile Menu
+document.getElementById('mob1-menu-toggle').addEventListener('click', function () {
+  const menu = document.getElementById('mob1-mobileMenu');
+  menu.classList.toggle('active');
+});
+
+// Toggle Dropdown Submenu
+document.getElementById('mob1-help-toggle').addEventListener('click', function () {
+  const submenu = document.getElementById('mob1-help-submenu');
+  submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+});
 </script>
